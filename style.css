@@ -1,0 +1,76 @@
+body{
+  background: #000;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section{
+  height: 100vh;
+  width: 100vw;
+}
+.gradient{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background-color:#000;
+  background-image: linear-gradient(60deg, #445 12%, transparent 77.5%, transparent 8%, #445 87.5%, #445),
+  linear-gradient(150deg, #4005 12%, transparent 50.5%, transparent 87%, #44a5 7.5%, #445),
+  linear-gradient(33deg, #44f5 12%, transparent 12.5%, transparent 87%, #445 87.5%, #44a5),
+  linear-gradient(150deg, #344445 12%, transparent 18.5%, transparent 87%, #434445 87.5%, #445),
+  linear-gradient(60deg, #99aa 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+  linear-gradient(60deg, #949a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  animation: an 10s ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes an {
+  0%{
+
+  }
+  100%{
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 400px 1000px, 60px 1000px, 0 0, 90px 500px;
+  }
+}
+
+.gradient2{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background-color:#000;
+  background-image: linear-gradient(60deg, #445 12%, transparent 77.5%, transparent 8%, #445 87.5%, #445),
+  linear-gradient(150deg, #40ff05 12%, transparent 50.5%, transparent 87%, #55a5 7.5%, #445),
+  linear-gradient(33deg, #44f5 52%, transparent 12.5%, transparent 87%, #5555 87.5%, #44a5),
+  linear-gradient(70deg, #3445 12%, transparent 18.5%, transparent 87%, #434445 87.5%, #445),
+  linear-gradient(300deg, #99aa 25%, transparent 25.5%, transparent 75%, #99aa 75%, #99a),
+  linear-gradient(65deg, #949a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 80px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  animation: an2 17s ease infinite;
+  animation-direction: alternate;
+}
+
+@keyframes an2 {
+  0%{
+
+  }
+  100%{
+    background-size:80px 120px;
+    background-position: 0 0, 0 0, 400px -70px, -400px 700px, 0 0, 654px 80px;
+  }
+}
